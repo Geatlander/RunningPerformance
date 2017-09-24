@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/workoutChart"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:text="Mileage of Past Two Weeks:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mileageview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <Button
+        android:text="Next Graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nextbtn"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
+
+

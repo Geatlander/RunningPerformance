@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.goobynater.runningperformance.RecordsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="5000m Record:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/fivekview"
+        android:layout_marginStart="23dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/editTimes"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Edit Times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTimes"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:text="3200m Record:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fivekview"
+        android:layout_alignStart="@+id/fivekview"
+        android:layout_marginTop="29dp"
+        android:id="@+id/twomview" />
+
+    <TextView
+        android:text="1600m Record:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twomview"
+        android:layout_alignStart="@+id/twomview"
+        android:layout_marginTop="28dp"
+        android:id="@+id/mview" />
+
+    <TextView
+        android:text="400m Record:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/qmview"
+        android:layout_below="@+id/hmview"
+        android:layout_alignStart="@+id/hmview" />
+
+    <TextView
+        android:text="800m Record:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hmview"
+        android:layout_below="@+id/mview"
+        android:layout_alignStart="@+id/mview"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

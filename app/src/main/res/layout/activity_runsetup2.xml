@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_runsetup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.goobynater.runningperformance.Runsetup2">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="33dp"
+        android:id="@+id/getTimeDate"
+        android:layout_below="@+id/complabel"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Date:" />
+
+    <CheckBox
+        android:text="400 Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourcheck"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="When is your next competition?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/complabel"
+        android:fontFamily="monospace"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eventslabel" />
+
+    <CheckBox
+        android:text="5000 Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fivecheck"
+        android:layout_below="@+id/thirtytwocheck"
+        android:layout_alignStart="@+id/thirtytwocheck" />
+
+    <CheckBox
+        android:text="3200 Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirtytwocheck"
+        android:layout_below="@+id/sixteencheck"
+        android:layout_alignStart="@+id/sixteencheck" />
+
+    <CheckBox
+        android:text="1600 Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sixteencheck"
+        android:layout_below="@+id/eightcheck"
+        android:layout_alignStart="@+id/eightcheck" />
+
+    <CheckBox
+        android:text="800 Meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eightcheck"
+        tools:text="800 Meter"
+        android:layout_below="@+id/fourcheck"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="What Events are you Running?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventslabel"
+        android:fontFamily="monospace"
+        android:layout_above="@+id/fourcheck"
+        android:layout_alignStart="@+id/getTimeDate" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/eightcheck"
+        android:id="@+id/submitbtn" />
+
+</RelativeLayout>
